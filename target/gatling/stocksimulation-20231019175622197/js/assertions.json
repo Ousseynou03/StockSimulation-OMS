@@ -1,0 +1,10 @@
+{
+  "simulation": "StockSimulation",
+  "simulationId": "stocksimulation-20231019175622197",
+  "start": 1697738183249,
+  "description": "",
+  "scenarios": ["Create Article Scenario", "Modify Stock Scenario", "Delete Article Scenario"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,14 @@
+RUN	StockSimulation	stocksimulation	1697738182197	 	3.9.5
+USER	Create Article Scenario	START	1697738183251
+USER	Modify Stock Scenario	START	1697738183251
+USER	Delete Article Scenario	START	1697738183251
+REQUEST		Create Article	1697738183249	1697738193254	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+REQUEST		Modify Stock	1697738183249	1697738193254	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+REQUEST		Delete Article	1697738183249	1697738193254	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+USER	Delete Article Scenario	END	1697738193262
+USER	Create Article Scenario	END	1697738193262
+REQUEST		Modify Stock	1697738193261	1697738203264	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+REQUEST		Modify Stock	1697738203265	1697738213268	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+REQUEST		Modify Stock	1697738213269	1697738223271	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+REQUEST		Modify Stock	1697738223272	1697738233275	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+USER	Modify Stock Scenario	END	1697738233276

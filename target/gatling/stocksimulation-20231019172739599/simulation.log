@@ -1,0 +1,14 @@
+RUN	StockSimulation	stocksimulation	1697736459599	 	3.9.5
+USER	Create Article Scenario	START	1697736460699
+ERROR	Modify Stock: Failed to build request: No attribute named 'code' is defined 	1697736460705
+USER	Modify Stock Scenario	START	1697736460710
+ERROR	Modify Stock: Failed to build request: No attribute named 'code' is defined 	1697736460710
+ERROR	Modify Stock: Failed to build request: No attribute named 'code' is defined 	1697736460710
+ERROR	Modify Stock: Failed to build request: No attribute named 'code' is defined 	1697736460710
+ERROR	Modify Stock: Failed to build request: No attribute named 'code' is defined 	1697736460711
+USER	Modify Stock Scenario	END	1697736460712
+USER	Delete Article Scenario	START	1697736460718
+REQUEST		Create Article	1697736460717	1697736470720	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+REQUEST		Delete Article	1697736460717	1697736470720	KO	i.n.c.ConnectTimeoutException: connection timed out: /10.8.9.33:9308
+USER	Delete Article Scenario	END	1697736470730
+USER	Create Article Scenario	END	1697736470731
