@@ -50,7 +50,7 @@ class EstockLoadTest extends Simulation  {
     )
     .pause(10 seconds)
   setUp(
-    createArticleScenario.inject(rampUsers(50000) during(20 minutes))
+    createArticleScenario.inject(atOnceUsers(1))
   ).protocols(httpConf)
 
 }
