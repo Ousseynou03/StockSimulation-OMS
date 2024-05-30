@@ -15,9 +15,9 @@ class EstockLoadTest extends Simulation {
     .doNotTrackHeader("1")
 
   private val FichierPath: String = System.getProperty("dataDir", "data/")
-  private val FichierjddCodeUg: String = "jddCodeUga.csv"
+  private val FichierjddCodeUga: String = "jddCodeUga.csv"
 
-  val jddCodeUga = csv(FichierPath + FichierjddCodeUg).circular
+  val jddCodeUga = csv(FichierPath + FichierjddCodeUga).circular
 
 
   val createArticleScenario = scenario("Create Article Scenario")
