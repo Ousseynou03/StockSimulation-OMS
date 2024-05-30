@@ -42,6 +42,7 @@ class EstockLoadTest extends Simulation  {
           .put("/do10000024-${code_uga}/10")
       )
     }
+    // suppression article
     .pace(3000)
     .exec(
       http("Delete Article")
